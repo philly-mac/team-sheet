@@ -1,20 +1,172 @@
-%table
-  %th
-    %td.money &euro;
-    %td.team{:colspan => 2} A
-    %td.money &euro;
-    %td.team{:colspan => 2} B
-    %td.money &euro;
-    %td.team{:colspan => 2} C
+%table.team{:cellpadding => '0px', :cellspacing => '0px'}
+  %tr
+    %th.money &euro;
+    %th.sub{:colspan => 2} S
+    %th.keeper{:colspan => 2} K
+    %th.team{:colspan => 2} A
+    %th.money &euro;
+    %th.sub{:colspan => 2} S
+    %th.keeper{:colspan => 2} K
+    %th.team{:colspan => 2} B
+    %th.money &euro;
+    %th.sub{:colspan => 2} S
+    %th.keeper{:colspan => 2} K
+    %th.team{:colspan => 2} C
 
   - 6.times do
     %tr
-      %td
-      %td
-      %td
-      %td
-      %td
-      %td
-      %td
-      %td
-      %td
+      %td &nbsp;
+      %td.sub &nbsp;
+      %td.sub &nbsp;
+      %td.keeper &nbsp;
+      %td.keeper &nbsp;
+      %td.name &nbsp;
+      %td.goals &nbsp;
+      %td &nbsp;
+      %td.sub &nbsp;
+      %td.sub &nbsp;
+      %td.keeper &nbsp;
+      %td.keeper &nbsp;
+      %td.name &nbsp;
+      %td.goals &nbsp;
+      %td &nbsp;
+      %td.sub &nbsp;
+      %td.sub &nbsp;
+      %td.keeper &nbsp;
+      %td.keeper &nbsp;
+      %td.name &nbsp;
+      %td.goals &nbsp;
+
+%br/
+%br/
+
+%table.scores{:cellpadding => '0px', :cellspacing => '0px'}
+  %tr
+    %th.team-1{:colspan => 3} #1
+    %th.black &nbsp;
+    %th.team-2{:colspan => 3} #2
+    %th.black &nbsp;
+    %th.points{:colspan => 3} Points
+    %th.black &nbsp;
+    %th.running-total{:colspan => 3} Running Totoal
+
+  %tr
+    %th.team &nbsp;
+    %th.goals Goals
+    %th.score Scr
+    %th.separater.black
+
+    %th.score Scr
+    %th.goals Goals
+    %th.team &nbsp;
+    %th.separater.black &nbsp;
+
+    %th.team A
+    %th.team B
+    %th.team C
+    %th.separater.black &nbsp;
+
+    %th.team A
+    %th.team B
+    %th.team C
+
+  - 3.times do |i|
+    %tr
+      %td.round-title{:colspan => 18}=  "Round #{i+1}"
+
+    %tr
+      %td.team A
+      %td &nbsp;
+      %td &nbsp;
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td &nbsp;
+      %td.team B
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td &nbsp;
+      %td.black &nbsp;
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td &nbsp;
+      %td &nbsp;
+
+    %tr
+      %td.team A
+      %td &nbsp;
+      %td &nbsp;
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td &nbsp;
+      %td.team C
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td.black &nbsp;
+      %td &nbsp;
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td &nbsp;
+      %td &nbsp;
+
+    %tr
+      %td.team B
+      %td &nbsp;
+      %td &nbsp;
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td &nbsp;
+      %td.team C
+      %td.black &nbsp;
+
+      %td.black &nbsp;
+      %td &nbsp;
+      %td &nbsp;
+      %td.black &nbsp;
+
+      %td &nbsp;
+      %td &nbsp;
+      %td &nbsp;
+
+%br
+%br
+
+%table.kitty{:cellpadding => '0px', :cellspacing => '0px'}
+  %tr
+    %td.label Previous Balance
+    %td &nbsp;
+
+  %tr
+    %td.label  Cost for current week
+    %td &nbsp;
+
+  %tr
+    %td.label  Amount from players
+    %td &nbsp;
+
+  %tr
+    %td.label  Amount from kitty
+    %td &nbsp;
+
+  %tr
+    %td.label  Surplus/shortfall
+    %td &nbsp;
+
+  %tr
+    %td.label  New balance
+    %td &nbsp;
+
+%br
+%br
+
+%table.notes{:cellpadding => '0px', :cellspacing => '0px'}
+
+  - 6.times do
+    %tr
+      %td &nbsp;

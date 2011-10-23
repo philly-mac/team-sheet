@@ -3,10 +3,67 @@ body
     family: Verdana
     size: 10pt
 
-table, th, tr, td
+table
+  cellpadding: 0px
+  cellspacing: 0px
+
+table.team, table.kitty, table.notes
+  width: 800px
+
+table.team, th, tr, td
+
   border: 1px solid black
 
-  td.money
+  th.money
     width: 20px
     text-align: center
+  th.team
+    width: 150px
 
+  td.name
+    width: 50px
+
+  td.goals
+    width: 70px
+
+  td.sub
+    width: 20px
+
+  td.keeper
+    width: 20px
+
+
+table.scores, th, tr, td
+  border: 1px solid black
+
+  th.team-1, .team-2, .points, .running-total
+    width: 200px
+
+  th.team
+    width: 20px
+  th.goals
+    width: 40px
+  th.score
+    width: 20px
+
+  td.round-title, th.black, td.black
+    background-color: black
+    color: white
+    font-weight: bolder
+  td.title
+    text-align: center
+
+  td.team
+    text-align: center
+    font-weight: bolder
+
+  td, th
+    height: 25px
+
+table.kitty, th, tr, td
+  border: 1px solid black
+
+  td.label
+    width: 200px
+    font-weight: bolder
+    padding: 3px

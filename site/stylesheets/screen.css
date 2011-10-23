@@ -1,0 +1,97 @@
+/* line 1 */
+body {
+  font-family: Verdana;
+  font-size: 10pt;
+}
+
+/* line 6 */
+table {
+  cellpadding: 0px;
+  cellspacing: 0px;
+}
+
+/* line 10 */
+table.team, table.kitty, table.notes {
+  width: 800px;
+}
+
+/* line 13 */
+table.team, th, tr, td {
+  border: 1px solid black;
+}
+/* line 17 */
+table.team th.money, th th.money, tr th.money, td th.money {
+  width: 20px;
+  text-align: center;
+}
+/* line 20 */
+table.team th.team, th th.team, tr th.team, td th.team {
+  width: 150px;
+}
+/* line 23 */
+table.team td.name, th td.name, tr td.name, td td.name {
+  width: 50px;
+}
+/* line 26 */
+table.team td.goals, th td.goals, tr td.goals, td td.goals {
+  width: 70px;
+}
+/* line 29 */
+table.team td.sub, th td.sub, tr td.sub, td td.sub {
+  width: 20px;
+}
+/* line 32 */
+table.team td.keeper, th td.keeper, tr td.keeper, td td.keeper {
+  width: 20px;
+}
+
+/* line 36 */
+table.scores, th, tr, td {
+  border: 1px solid black;
+}
+/* line 39 */
+table.scores th.team-1, table.scores .team-2, table.scores .points, table.scores .running-total, th th.team-1, th .team-2, th .points, th .running-total, tr th.team-1, tr .team-2, tr .points, tr .running-total, td th.team-1, td .team-2, td .points, td .running-total {
+  width: 200px;
+}
+/* line 42 */
+table.scores th.team, th th.team, tr th.team, td th.team {
+  width: 20px;
+}
+/* line 44 */
+table.scores th.goals, th th.goals, tr th.goals, td th.goals {
+  width: 40px;
+}
+/* line 46 */
+table.scores th.score, th th.score, tr th.score, td th.score {
+  width: 20px;
+}
+/* line 49 */
+table.scores td.round-title, table.scores th.black, table.scores td.black, th td.round-title, th th.black, th td.black, tr td.round-title, tr th.black, tr td.black, td td.round-title, td th.black, td td.black {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+/* line 53 */
+table.scores td.title, th td.title, tr td.title, td td.title {
+  text-align: center;
+}
+/* line 56 */
+table.scores td.team, th td.team, tr td.team, td td.team {
+  text-align: center;
+  font-weight: bolder;
+}
+/* line 60 */
+table.scores td, table.scores th, th td, th th, tr td, tr th, td td, td th {
+  height: 25px;
+}
+
+/* line 63 */
+table.kitty, th, tr, td {
+  border: 1px solid black;
+}
+/* line 66 */
+table.kitty td.label, th td.label, tr td.label, td td.label {
+  width: 200px;
+  font-weight: bolder;
+  padding: 3px;
+}
