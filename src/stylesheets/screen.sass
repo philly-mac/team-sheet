@@ -7,12 +7,15 @@ table
   cellpadding: 0px
   cellspacing: 0px
 
-table.team, table.kitty, table.notes
+table.kitty, table.notes
   width: 800px
 
 table.team, th, tr, td
 
   border: 1px solid black
+
+  th.sub, th.keeper
+    width: 20px
 
   th.money
     width: 20px
@@ -26,11 +29,25 @@ table.team, th, tr, td
   td.goals
     width: 70px
 
-  td.sub
+  td.tick
     width: 20px
 
   td.keeper
     width: 20px
+
+.round, .separator, .blank
+  background-color: black
+
+.separator
+  height: 5px
+
+.score
+  width: 25px
+
+.letter
+  font-weight: bolder
+  width: 20px
+  text-align: center
 
 
 table.scores, th, tr, td

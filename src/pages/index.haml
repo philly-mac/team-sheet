@@ -1,141 +1,100 @@
 %table.team{:cellpadding => '0px', :cellspacing => '0px'}
   %tr
-    %th.money &euro;
+    %th &nbsp;
     %th.sub{:colspan => 2} S
     %th.keeper{:colspan => 2} K
-    %th.team{:colspan => 2} A
-    %th.money &euro;
-    %th.sub{:colspan => 2} S
-    %th.keeper{:colspan => 2} K
-    %th.team{:colspan => 2} B
-    %th.money &euro;
-    %th.sub{:colspan => 2} S
-    %th.keeper{:colspan => 2} K
-    %th.team{:colspan => 2} C
+    %th.tick.money &euro;
 
-  - 6.times do
-    %tr
-      %td &nbsp;
-      %td.sub &nbsp;
-      %td.sub &nbsp;
-      %td.keeper &nbsp;
-      %td.keeper &nbsp;
-      %td.name &nbsp;
-      %td.goals &nbsp;
-      %td &nbsp;
-      %td.sub &nbsp;
-      %td.sub &nbsp;
-      %td.keeper &nbsp;
-      %td.keeper &nbsp;
-      %td.name &nbsp;
-      %td.goals &nbsp;
-      %td &nbsp;
-      %td.sub &nbsp;
-      %td.sub &nbsp;
-      %td.keeper &nbsp;
-      %td.keeper &nbsp;
-      %td.name &nbsp;
-      %td.goals &nbsp;
+    %th Player
 
-%br/
-%br/
 
-%table.scores{:cellpadding => '0px', :cellspacing => '0px'}
-  %tr
-    %th.team-1{:colspan => 3} #1
-    %th.black &nbsp;
-    %th.team-2{:colspan => 3} #2
-    %th.black &nbsp;
-    %th.points{:colspan => 3} Points
-    %th.black &nbsp;
-    %th.running-total{:colspan => 3} Running Totoal
+    %th.round &nbsp;
 
-  %tr
-    %th.team &nbsp;
-    %th.goals Goals
-    %th.score Scr
-    %th.separater.black
 
-    %th.score Scr
-    %th.goals Goals
-    %th.team &nbsp;
-    %th.separater.black &nbsp;
+    %th.score &nbsp;
+    %th.team A v B
+    %th.score &nbsp;
 
-    %th.team A
-    %th.team B
-    %th.team C
-    %th.separater.black &nbsp;
+    %th.score &nbsp;
+    %th.team A v C
+    %th.score &nbsp;
 
-    %th.team A
-    %th.team B
-    %th.team C
+    %th.score &nbsp;
+    %th.team B v C
+    %th.score &nbsp;
+
+
+    %th.round &nbsp;
+
+
+    %th.score &nbsp;
+    %th.team A v B
+    %th.score &nbsp;
+
+    %th.score &nbsp;
+    %th.team A v C
+    %th.score &nbsp;
+
+    %th.score &nbsp;
+    %th.team B v C
+    %th.score &nbsp;
+
+
+    %th.round &nbsp;
+
+
+    %th.score &nbsp;
+    %th.team A v B
+    %th.score &nbsp;
+
+    %th.score &nbsp;
+    %th.team A v C
+    %th.score &nbsp;
+
+    %th.score &nbsp;
+    %th.team B v C
+    %th.score &nbsp;
+
 
   - 3.times do |i|
-    %tr
-      %td.round-title{:colspan => 18}=  "Round #{i+1}"
+    - 6.times do |q|
 
-    %tr
-      %td.team A
-      %td &nbsp;
-      %td &nbsp;
-      %td.black &nbsp;
+      %tr
+        - if q == 0
+          %td.letter{:rowspan => 6}= ['A', 'B', 'C'][i]
+        %td.tick &nbsp;
+        %td.tick &nbsp;
+        %td.tick &nbsp;
+        %td.tick &nbsp;
+        %td.tick &nbsp;
+        %td.name &nbsp;
 
-      %td &nbsp;
-      %td &nbsp;
-      %td.team B
-      %td.black &nbsp;
+        - 3.times do |x|
 
-      %td &nbsp;
-      %td &nbsp;
-      %td.black &nbsp;
-      %td.black &nbsp;
+          %td.round &nbsp;
 
-      %td &nbsp;
-      %td &nbsp;
-      %td &nbsp;
+          - 3.times do |y|
 
-    %tr
-      %td.team A
-      %td &nbsp;
-      %td &nbsp;
-      %td.black &nbsp;
+            - class_name = 'game'
 
-      %td &nbsp;
-      %td &nbsp;
-      %td.team C
-      %td.black &nbsp;
+            - if i == 0
+              - class_name = y == 2 ? 'blank' : 'game'
 
-      %td &nbsp;
-      %td.black &nbsp;
-      %td &nbsp;
-      %td.black &nbsp;
+            - if i == 1
+              - class_name = y == 1 ? 'blank' : 'game'
 
-      %td &nbsp;
-      %td &nbsp;
-      %td &nbsp;
+            - if i == 2
+              - class_name = y == 0 ? 'blank' : 'game'
 
-    %tr
-      %td.team B
-      %td &nbsp;
-      %td &nbsp;
-      %td.black &nbsp;
+            %td{:colspan => 3, :class => class_name} &nbsp;
 
-      %td &nbsp;
-      %td &nbsp;
-      %td.team C
-      %td.black &nbsp;
+    - unless i == 2
+      %tr
+        %td.separator{:colspan => 40} &nbsp;
 
-      %td.black &nbsp;
-      %td &nbsp;
-      %td &nbsp;
-      %td.black &nbsp;
+%br/
+%br/
 
-      %td &nbsp;
-      %td &nbsp;
-      %td &nbsp;
-
-%br
-%br
 
 %table.kitty{:cellpadding => '0px', :cellspacing => '0px'}
   %tr
