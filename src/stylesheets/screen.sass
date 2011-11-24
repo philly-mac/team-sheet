@@ -7,8 +7,11 @@ table
   cellpadding: 0px
   cellspacing: 0px
 
-table.kitty, table.notes
-  width: 800px
+table.notes, table.team
+  width: 1200px
+
+table.kitty
+  width: 500px
 
 table.team, th, tr, td
 
@@ -50,6 +53,13 @@ table.team, th, tr, td
   text-align: center
 
 
+table.game-points
+  td
+    width: 70px
+  .black
+    background-color: black
+
+
 table.scores, th, tr, td
   border: 1px solid black
 
@@ -62,6 +72,10 @@ table.scores, th, tr, td
     width: 40px
   th.score
     width: 20px
+
+  td.game-number
+    text-align: center
+    font-weight: bolder
 
   td.round-title, th.black, td.black
     background-color: black
@@ -76,6 +90,10 @@ table.scores, th, tr, td
 
   td, th
     height: 25px
+  .name
+    font-size: 10px
+    font-weight: bolder
+    padding: 2px
 
 table.kitty, th, tr, td
   border: 1px solid black
